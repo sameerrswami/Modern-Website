@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: monospace;
+}
+.btn-box{
+    background: linear-gradient(to right,#00aaa7,#7f42a7,#6600c5,#1f2b9c,#2a46ff,#0099ff,#00aaa7);
+    background-size: 200%;
+    animation: animationGradient 2.5s linear infinite;
+    clip-path: polygon(81% 0, 100% 33%, 100% 100%, 0 100%, 0 0);
+}
+.hero-img-box{
+    background: linear-gradient(to right,#00aaa7,#7f42a7,#6600c5,#1f2b9c,#2a46ff,#0099ff,#00aaa7);
+    background-size: 200%;
+    animation: animationGradient 2.5s linear infinite;
+}
+.btn-box button{
+    inset: 3px 3px 3px 3px;
+    clip-path: polygon(81% 0, 100% 33%, 100% 100%, 0 100%, 0 0);
+}
+.hero button{
+    clip-path: polygon(81% 0, 100% 33%, 100% 100%, 0 100%, 0 0);
+}
+.sign-in-page{
+    box-shadow: 0 0 15px rgba(255,255,255,0.484);
+}
+.sign-in-page input{
+    clip-path: polygon(93% 0, 100% 42%, 100% 100%, 0 100%, 0 0);
+}
+footer .foot-icons a:hover{
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.272);
+}
+
+
+@keyframes animationGradient {
+    to{
+        background-position: 200%;
+    }
+}
+
+.parallax{
+    transition: transform 0.6s linear ;
+}
+
+.openSignin{
+    animation: openSigninAnimation 1s forwards;
+}
+@keyframes openSigninAnimation {
+    to{
+        filter: blur(0);
+        scale: 1;
+        top: 23%;
+    }
+}
+
+.hiddenSignin {
+    filter: blur(1);
+    scale: 0;
+    top: 80%;
+}
+
+
+.closeSignin{
+    animation: closeSigninAnimation 1s forwards;
+}
+@keyframes closeSigninAnimation {
+    from{
+        filter: blur(0);
+        scale: 1;
+        top: 30%;
+    }
+    to{
+        filter: blur(1);
+        scale: 0;
+        top: 80%;
+    }
+}
+
+.autoDisplay{
+    animation: autoAnimate;
+    animation-timeline: view();
+}
+@keyframes autoAnimate {
+    from{
+        filter: blur(8px);
+        transform: translateY(-100px) scale(0.5);
+    }35%{
+        filter: blur(0px);
+        transform: translateY(0) scale(1);
+    }
+}
+/* fade  */
+.fadeInLeft{
+    animation: fadeIn;
+    animation-timeline: view();
+}
+.fadeInRight{
+    animation: fadeInRight;
+    animation-timeline: view();
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: translateX(-300px) scale(0.2);
+    }
+    18%,35%{
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(300px) scale(0.2);
+    }
+    35%,50%{
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+
+/* autoblur */
+.autoBlur{
+    animation: autoBlur linear both;
+    animation-timeline: view();
+}
+@keyframes autoBlur {
+    0%{
+        filter: blur(40px);
+    }
+    30%,70%{
+        filter: blur(0);
+        opacity: 1;
+    }
+    100%{
+        filter: blur(40px);
+        opacity: 0;
+    }
+}

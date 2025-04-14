@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Landing Page</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="m-0 p-0 bg-[#0E0C15]">
+    <div class="container flex flex-col justify-center items-center relative w-full">
+        <header
+            class="fixed top-0 ring-0 left-0 flex justify-between pt-4 pr-8 pb-4 pl-8 z-50 w-full items-center bg-[rgba(14,12,21,0.5)] backdrop-blur-lg border-b-[0.5px] border-solid border-[rgba(110,101,114,0.5)]">
+            <div class="flex items-center">
+                <img src="images/logo.png" class="h-10 mr-5" alt="">
+                <h1 class="text-white text-2xl font-bold">MCBRAIN</h1>
+            </div>
+            <div class="flex justify-between w-1/3 text-gray-400 text-sm">
+                <a class="hover:text-white" href="#">FEATURES</a>
+                <a class="hover:text-white" href="#">PRICING</a>
+                <a class="hover:text-white" href="#">HOW TO USE</a>
+                <a class="hover:text-white" href="#">RODEMAP</a>
+            </div>
+            <div class="flex items-center">
+                <a href="#" class="text-gray-400">NEW ACCOUNT</a>
+                <div class="btn-box relative w-24 h-10 ml-5 rounded-lg">
+                    <button id="signin"
+                        class="rounded-lg absolute bg-[#0E0C15] text-gray-100 cursor-pointer transition duration-200 hover:text-purple-400">SIGN
+                        IN</button>
+                </div>
+            </div>
+        </header>
+
+        <section
+            class="hero relative flex justify-center items-center w-[95%] h-[180vh] overflow-hidden border-[0.5px] border-solid border-[rgba(107,88,116,0.5)] border-t-0">
+            <img class="-z-10 w-full h-[80%] absolute top-[-10%]" src="images/hero blur img.png" alt="">
+            <img data-speed="4" class="absolute top-[80px] opacity-80 parallax" src="images/hero icons img.png" alt="">
+            <img class="w-full absolute top-[8%] parallax" src="images/hero rings icon.png" alt="">
+            <h1 data-aos="fade-up" data-aos-duration="2000"
+                class="font-bold font-serif absolute top-[10%] leading-1.5 tracking-wide max-w-[900px] text-white text-center text-4xl">
+                Discover the Endless Possibilities of AI Conversation with MCBRAIN</h1>
+            <h3 data-aos="fade-up" data-aos-duration="2000"
+                class="absolute font-serif text-lg top-[18%] max-w-[570px] text-center text-gray-300">Unleash the power
+                of AI with MCBRAIN. Enhance your productivity with MCBRAIN, the ultimate OpenAI powered chat app.</h3>
+            <button data-aos="fade-up" data-aos-duration="2000"
+                class="absolute top-[24%] text-black bg-white rounded-lg w-32 h-12 cursor-pointer font-bold transition duration-200 hover:opacity-80 hover:text-purple-600">Get
+                Started</button>
+
+            <div data-aos="fade-up" data-aos-duration="2000"
+                class="hero-img-box mt-[50px] relative w-[750px] h-[400px] flex items-center justify-center rounded-[50px]">
+                <div class="rob-box w-[98.5%] h-[98%] overflow-hidden relative rounded-[50px]">
+                    <div class="h-[30px] w-full backdrop-blur-2xl bg-gray-700 opacity-30"></div>
+                    <img src="images/robot1.png" class="w-full h-full mix-blend-hard-light">
+                </div>
+                <div class="absolute top-[25%] right-[-15%] backdrop-blur-2xl w-[25%] rounded-2xl">
+                    <img class="rounded-2xl w-full" src="images/element1.png" alt="">
+                </div>
+                <div class="absolute top-[45%] left-[-15%] backdrop-blur-2xl w-[25%] rounded-2xl">
+                    <img class="w-full rounded-2xl" src="images/element2.png" alt="">
+                </div>
+            </div>
+
+            <h4 class="absolute bottom-[12%] text-gray-400">Helping people create beautiful content at MCBRAIN</h4>
+
+            <div class="companies-list flex justify-between absolute bottom-[3%] w-[95%] text-white">
+                <div data-aos="fade-up" data-aos-duration="800" class="company flex items-center">
+                    <img src="images/company1.png" class=" h-[50px] mr-[10px]" alt="">
+                    <p class="font-bold text-2xl">Memric</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1100" class="company flex items-center">
+                    <img src="images/company2.png" class=" h-[50px] mr-[10px]" alt="">
+                    <p class="font-bold text-2xl">Ispum</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1400" class="company flex items-center">
+                    <img src="images/company3.png" class=" h-[50px] mr-[10px]" alt="">
+                    <p class="font-bold text-2xl">MCBRAIN</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1700" class="company flex items-center">
+                    <img src="images/company4.png" class=" h-[50px] mr-[10px]" alt="">
+                    <p class="font-bold text-2xl">Quanex</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="2000" class="company flex items-center">
+                    <img src="images/company5.png" class=" h-[50px] mr-[10px]" alt="">
+                    <p class="font-bold text-2xl">Synthex</p>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="signinPage" class="sign-in-box w-96 h-[60vh] fixed text-white hiddenSignin">
+            <div
+                class="sign-in-page w-full h-full relative flex items-center justify-center flex-col bg-[#0E0C15] rounded-[20px]">
+                <h1 class="text-3xl font-semibold text-white">Sign In</h1>
+                <input
+                    class="rounded-[5px] pt-2 mb-4 mt-4 text-black pb-2 outline-0 bg-gray-300 w-[70%] h-[40px]  pr-5 pl-5"
+                    type="text" placeholder="User Name">
+                <input class="rounded-[5px] pt-2 mb-4 text-black pb-2 outline-0 bg-gray-300 w-[70%] h-[40px]  pr-5 pl-5"
+                    type="email" placeholder="Email">
+                <input class="rounded-[5px] pt-2 mb-4 text-black pb-2 outline-0 bg-gray-300 w-[70%] h-[40px]  pr-5 pl-5"
+                    type="password" placeholder="Password">
+                <button class="w-1/2 h-10 bg-[#7e00d2] border-0 cursor-pointer rounded-[5px] font-semibold text-lg">Sign
+                    In</button>
+                <p
+                    class="mt-3 flex items-center justify-center w-1/2 h-10 text-lg font-semibold bg-gray-400 rounded-[5px] text-white border-0">
+                    Login</p>
+                <div id="close"
+                    class="absolute top-[3%] right-[3%] text-2xl cursor-pointer text-white ho ver:opacity-40"><i
+                        class='bx bx-x'></i></div>
+            </div>
+        </div>
+
+        <section
+            class="features relative flex flex-col items-center border-[0.5px] border-solid border-[rgba(107,88,116,0.5)] border-t-0 w-[95%] pb-[10%] text-white">
+            <h1 data-aos="zoom-in"
+                class="text-center text-white text-5xl max-w-[600px] mt-[100px] mb-[100px] mr-0 ml-0">Chat Smarter, Not
+                harder. with MCBRAIN</h1>
+            <div></div>
+            <div class="cards flex flex-wrap justify-center flex-row gap-5">
+                <div style="clip-path: polygon(80% 0, 100% 19%, 100% 100%, 0 100%, 0 0);"
+                    class="card autoDisplay h-[350px] relative min-w-[350px] w-1/4 bg-[#191528] rounded-2xl">
+                    <h2 class="absolute text-xl top-[5%] left-[5%] tracking-wide font-semibold">Ask Anything</h2>
+                    <p
+                        class="text-lg absolute top-[20%] left-[5%] max-w-[400px] text-[rgb(127,109,135)] leading-[25px]">
+                        Lets user quickly find asnwers to their questions without having to search through multiple
+                        sources.</p>
+                    <div class="explore absolute left-[10%] bottom-[8%] right-[10%] flex items-center justify-between">
+                        <img class="w-[70px]" src="images/feature1.png" alt="">
+                        <a class="decoration-0 text-gray-200 text-xl font-bold text-nowrap" href="#">Explore More<i
+                                class='bx bx-link-external'></i></a>
+                    </div>
+
+                    <img class="h-full w-full opacity-0 transition-all duration-[0.5s] hover:opacity-[0.16] "
+                        src="images/features back img.png" alt="">
+                </div>
+                <div style="clip-path: polygon(80% 0, 100% 19%, 100% 100%, 0 100%, 0 0);"
+                    class="card autoDisplay min-w-[350px] h-[350px] relative w-1/4 bg-[#191528] rounded-2xl">
+                    <h2 class="absolute text-xl top-[5%] left-[5%] tracking-wide font-semibold">Improve Everyday</h2>
+                    <p
+                        class="text-lg absolute top-[20%] left-[5%] max-w-[400px] text-[rgb(127,109,135)] leading-[25px]">
+                        The app uses natural language processing to understand user queries and proviede accurate and
+                        relevant responses.</p>
+                    <div class="explore absolute left-[10%] bottom-[8%] right-[10%] flex items-center justify-between">
+                        <img class="w-[70px]" src="images/feature4.png" alt="">
+                        <a class="decoration-0 text-gray-200 text-xl font-bold text-nowrap" href="#">Explore More<i
+                                class='bx bx-link-external'></i></a>
+                    </div>
+
+                    <img class="h-full w-full opacity-0 transition-all duration-[0.5s] hover:opacity-[0.16] "
+                        src="images/features back img.png" alt="">
+                </div>
+                <div style="clip-path: polygon(80% 0, 100% 19%, 100% 100%, 0 100%, 0 0);"
+                    class="card autoDisplay min-w-[350px] h-[350px] relative w-1/4 bg-[#191528] rounded-2xl">
+                    <h2 class="absolute text-xl top-[5%] left-[5%] tracking-wide font-semibold">Connect Everywhere</h2>
+                    <p
+                        class="text-lg absolute top-[20%] left-[5%] max-w-[400px] text-[rgb(127,109,135)] leading-[25px]">
+                        Connect with the AI chatbot from anywhere , on any device making it more accessible and
+                        conveient.
+                    </p>
+                    <div class="explore absolute left-[10%] bottom-[8%] right-[10%] flex items-center justify-between">
+                        <img class="w-[70px]" src="images/feature2.png" alt="">
+                        <a class="decoration-0 text-gray-200 text-xl font-bold text-nowrap" href="#">Explore More<i
+                                class='bx bx-link-external'></i></a>
+                    </div>
+
+                    <img class="h-full w-full opacity-0 transition-all duration-[0.5s] hover:opacity-[0.16] "
+                        src="images/features back img.png" alt="">
+                </div>
+                <div style="clip-path: polygon(80% 0, 100% 19%, 100% 100%, 0 100%, 0 0);"
+                    class="card autoDisplay min-w-[350px] h-[350px] relative w-1/4 bg-[#191528] rounded-2xl">
+                    <h2 class="absolute text-xl top-[5%] left-[5%] tracking-wide font-semibold">Fast Responding</h2>
+                    <p
+                        class="text-lg absolute top-[20%] left-[5%] max-w-[400px] text-[rgb(127,109,135)] leading-[25px]">
+                        Enjoy lightning-fast responses that keep up with your thoughts, delivering solutions when you
+                        need them most.</p>
+                    <div class="explore absolute left-[10%] bottom-[8%] right-[10%] flex items-center justify-between">
+                        <img class="w-[70px]" src="images/feature2.png" alt="">
+                        <a class="decoration-0 text-gray-200 text-xl font-bold text-nowrap" href="#">Explore More<i
+                                class='bx bx-link-external'></i></a>
+                    </div>
+
+                    <img class="h-full w-full opacity-0 transition-all duration-[0.5s] hover:opacity-[0.16] "
+                        src="images/features back img.png" alt="">
+                </div>
+                <div style="clip-path: polygon(80% 0, 100% 19%, 100% 100%, 0 100%, 0 0);"
+                    class="card autoDisplay min-w-[350px] h-[350px] relative w-1/4 bg-[#191528] rounded-2xl">
+                    <h2 class="absolute text-xl top-[5%] left-[5%] tracking-wide font-semibold">Personalized Insights
+                    </h2>
+                    <p
+                        class="text-lg absolute top-[20%] left-[5%] max-w-[400px] text-[rgb(127,109,135)] leading-[25px]">
+                        Tailors answers and suggestions based on your behavior and preferences for a truly personalized
+                        experience.</p>
+                    <div class="explore absolute left-[10%] bottom-[8%] right-[10%] flex items-center justify-between">
+                        <img class="w-[70px]" src="images/feature3.png" alt="">
+                        <a class="decoration-0 text-gray-200 text-xl font-bold text-nowrap" href="#">Explore More<i
+                                class='bx bx-link-external'></i></a>
+                    </div>
+
+                    <img class="h-full w-full opacity-0 transition-all duration-[0.5s] hover:opacity-[0.16] "
+                        src="images/features back img.png" alt="">
+                </div>
+                <div style="clip-path: polygon(80% 0, 100% 19%, 100% 100%, 0 100%, 0 0);"
+                    class="card autoDisplay min-w-[350px] h-[350px] relative w-1/4 bg-[#191528] rounded-2xl">
+                    <h2 class="absolute text-xl top-[5%] left-[5%] tracking-wide font-semibold">Learn with Ease</h2>
+                    <p
+                        class="text-lg absolute top-[20%] left-[5%] max-w-[400px] text-[rgb(127,109,135)] leading-[25px]">
+                        Simplifies complex topics with clear explanations, helping users learn efficiently without
+                        feeling overwhelmed.</p>
+                    <div class="explore absolute left-[10%] bottom-[8%] right-[10%] flex items-center justify-between">
+                        <img class="w-[70px]" src="images/feature1.png" alt="">
+                        <a class="decoration-0 text-gray-200 text-xl font-bold text-nowrap" href="#">Explore More<i
+                                class='bx bx-link-external'></i></a>
+                    </div>
+
+                    <img class="h-full w-full opacity-0 transition-all duration-[0.5s] hover:opacity-[0.16] "
+                        src="images/features back img.png" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <section
+            class="chatapp w-[95%] justify-between flex h-[100vh]  border-[0.5px] border-solid border-[rgba(107,88,116,0.5)] border-t-0 text-white">
+            <div class="left flex flex-col mt-[10%] ml-[10%]">
+                <h1 class="fadeInLeft text-[38px] leading-10 max-w-[400px] mt-0 mb-5">AI Chat App for seamless
+                    collaboration</h1>
+                <p class="flex fadeInLeft items-center text-[20px] pb-2"><img class="h-[25px] mr-[20px]"
+                        src="images/Check circle.png" alt="">Seamless Integration</p>
+                <h2 class="leading-6 fadeInLeft max-w-[400px] pb-6 text-[17px] text-[rgb(127,109,135)]">With smart
+                    automation and top-notch
+                    security, it's the perfect solution for teams looking to work smarter.</h2>
+
+                <p class="fadeInLeft flex items-center text-[20px] pb-4 "><img class="h-[25px] mr-[20px]"
+                        src="images/Check circle.png" alt="">Smart Automation</p>
+                <p class="fadeInLeft flex items-center text-[20px] pb-1"><img class="h-[25px] mr-[20px]"
+                        src="images/Check circle.png" alt="">Top Notch Security</p>
+
+                <div class="btn-box fadeInLeft relative w-[110px] h-[38px] m-0 mt-[20px] rounded-lg">
+                    <button id="signin"
+                        class="rounded-lg absolute bg-[#0E0C15] text-gray-100 cursor-pointer transition duration-200 hover:text-purple-400">TRY
+                        IT NOW</button>
+                </div>
+            </div>
+
+            <div class="right flex flex-col items-center mt-[10%] mr-[5%]">
+                <h2 class="fadeInRight max-w-[300px] text-lg text-[rgb(127,109,135)] leading-5">With smart automation
+                    and top-notch
+                    security, it's the perfect solution for teams looking to work smarter.</h2>
+                <img class="fadeInRight w-[65%]" src="images/tools group.png" alt="">
+            </div>
+        </section>
+
+        <section
+            class="relative flex items-center flex-col w-[95%] border-[0.5px] border-solid border-[rgb(107,88,116,0.5)] border-t-0 border-b-0 pt-[10%] text-white">
+            <h1 data-aos="zoom-in" class="text-[48px] text-center text-white m-0">Generative AI made for creators</h1>
+            <p data-aos="zoom-in" class="text-[20px] text-[rgb(127,109,135)] text-center">MCBRAIN unlocks the potential
+                of AI-powered
+                Applications</p>
+            <div class="grid-box grid grid-cols-2 w-[95%] mt-[100px] gap-[30px]">
+
+                <div
+                    class="grid-card autoBlur grid1 relative border-[0.5px] border-solid border-[rgb(107,88,116,0.5)] rounded-3xl w-full col-span-2 h-[550px]">
+                    <img class="absolute h-[140%] bottom-0 left-0 rounded-3xl" src="images/service-1.png" alt="">
+                    <div class="info absolute right-[7%] top-[20%]">
+                        <h2 class="text-[50px] font-bold">Smartest AI</h2>
+                        <h3 class="text-[18px] text-[rgb(127,109,135)] text-center mb-[50px] max-w-[300px]">MCBRAIN
+                            unlocks the potential of AI-powered applications</h3>
+                        <p
+                            class="flex items-center text-white text-[18px] border-t-[0.5px] border-solid border-[rgb(107,88,116,0.5)]">
+                            <img class="mt-2 mb-2 h-[32px] mr-[15px]" src="images/Check circle.png" alt="">Photo
+                            Generating
+                        </p>
+                        <p
+                            class="flex items-center text-white text-[18px] border-t-[0.5px] border-solid border-[rgb(107,88,116,0.5)]">
+                            <img class="mt-2 mb-2 h-[32px] mr-[15px]" src="images/Check circle.png" alt="">Photo Enhance
+                        </p>
+                        <p
+                            class="flex items-center text-white text-[18px] border-t-[0.5px] border-solid border-[rgb(107,88,116,0.5)]">
+                            <img class="mt-2 mb-2 h-[32px] mr-[15px]" src="images/Check circle.png" alt="">Seamless
+                            Integration
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="grid-card grid2 autoBlur relative border-[0.5px] border-solid border-[rgb(107,88,116,0.5)] rounded-3xl w-full h-[550px]">
+                    <img src="images/service-2.png" class="h-full absolute right-0 -z-10 rounded-3xl" alt="">
+                    <div style="clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);"
+                        class="absolute h-[80px] w-[200px] bg-black top-[5%] right-[10%] rounded-2xl">
+                        <h2 class="w-[80%] mt-[10px] ml-[26px] text-start">Hey MCBRAIN, Enhance this photo</h2>
+                    </div>
+                    <h1 class="absolute bottom-[25%] left-[10%] font-semibold text-[40px]">Photo Editing</h1>
+                    <p
+                        class="absolute bottom-[10%] left-[10%] text[18px] text-[rgb(127,109,135)] max-w-[200px] font-bold">
+                        Automatically enhance your photos using our AI app's photo editing feature. Try it now!</p>
+                </div>
+
+                <div
+                    class="grid-card grid3 autoBlur relative border-[0.5px] border-solid border-[rgb(107,88,116,0.5)] rounded-3xl w-full h-[550px] bg-[#15131d]">
+                    <div class="info w-[90%] absolute left-[5%] mt-[25px] ">
+                        <h2 class=" font-semibold text-[40px]">Video Generation</h2>
+                        <h4 class="text[18px] text-[rgb(127,109,135)] max-w-[260px] font-bold text-center">The world's
+                            most powerfull AI photo and video art generation engine. What Will you create?</h4>
+
+                        <div class="info-icons flex justify-between gap-[5%] mt-[5%] flex-wrap w-full">
+                            <div class="icon pt-6 pr-6 pl-6 pb-2 bg-[#252134] rounded-2xl text-3xl text-white">
+                                <i class="bx bxs-extension"></i>
+                            </div>
+                            <div class="icon   pt-6 pr-6 pl-6 pb-2  bg-[#252134] rounded-2xl text-3xl text-white">
+                                <i class="bx bx-signal-5"></i>
+                            </div>
+                            <div
+                                class="icon bg-gradient-to-r from-[#a962ff] to-[#5b1f9c]  pt-6 pr-6 pl-6 pb-2  rounded-2xl text-3xl text-white">
+                                <i class="bx bxs-videos"></i>
+                            </div>
+                            <div class="icon  p-[22px] bg-[#252134] rounded-2xl text-3xl text-white">
+                                <i class="bx bx-wifi"></i>
+                            </div>
+                            <div class="icon  p-[22px] bg-[#252134] rounded-2xl text-3xl text-white">
+                                <i class='bx bx-reset'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/service-3.png" class="w-[90%] h-[270px] absolute bottom-[10px] left-[5%]" alt="">
+                </div>
+
+                <div
+                    class="grid-card grid4 autoBlur relative border-[0.5px] border-solid border-[rgb(107,88,116,0.5)] rounded-3xl w-full col-span-2 h-[550px]">
+                    <img class="absolute h-[120%] bottom-0 left-0 rounded-3xl" src="images/service-4.png" alt="">
+                    <div class="info absolute right-[7%] top-[20%]">
+                        <h2 class="text-[50px] font-bold">Smartest AI</h2>
+                        <h3 class="text-[18px] text-[rgb(127,109,135)] text-center mb-[50px] max-w-[300px]">MCBRAIN
+                            unlocks the potential of AI-powered applications</h3>
+                        <p
+                            class="flex items-center text-white text-[18px] border-t-[0.5px] border-solid border-[rgb(107,88,116,0.5)]">
+                            <img class="mt-2 mb-2 h-[32px] mr-[15px]" src="images/Check circle.png" alt="">Music
+                            Generating
+                        </p>
+                        <p
+                            class="flex items-center text-white text-[18px] border-t-[0.5px] border-solid border-[rgb(107,88,116,0.5)]">
+                            <img class="mt-2 mb-2 h-[32px] mr-[15px]" src="images/Check circle.png" alt="">Voice Enhance
+                        </p>
+                        <p
+                            class="flex items-center text-white text-[18px] border-t-[0.5px] border-solid border-[rgb(107,88,116,0.5)]">
+                            <img class="mt-2 mb-2 h-[32px] mr-[15px]" src="images/Check circle.png" alt="">Seamless
+                            Integration
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="prices text-white w-[95%] h-[180vh] border-[0.5px] border-solid border-[rgba(107,88,116,0.5)] border-t-0  flex flex-col items-center justify-center overflow-hidden pt-[100px] pb-10">
+            <div class="prive-img relative w-[90%] h-full justify-center items-center flex ">
+                <img class="absolute parallax w-full" data-speed="4" src="images/pricing-parallax.png" alt="">
+                <img class="absolute h-[300px] mt-[-8%]" src="images/magical-glob.png" alt="">
+            </div>
+            <h1 data-aos="zoom-in" class="text-3xl">Pay once, use forever</h1>
+
+            <div class=" cont flex justify-between w-[95%] gap-[20px] z-10">
+                <div data-aos="flip-left"
+                    class="price-box flex flex-col items-start justify-between w-[30%] h-[500px] rounded-2xl mt-[30px]  border-[0.5px] border-solid border-[rgba(107,88,116,0.5)] p-3">
+                    <h1 class="text-[30px] mt-[10px]  text-[#ffc786] mb-[20px]">Basic</h1>
+                    <h2>Chatbot, Personalized recommendations on basic level</h2>
+                    <h3 class="text-[40px] mt-[10px] mb-[30px]">$0</h3>
+                    <button style="clip-path: polygon(94% 0, 100% 23%, 100% 99%, 0 100%, 0 0);
+" class="border-0 bg-gray-400 text-black rounded-md h-[35px] cursor-pointer text-[14px] p-1 font-bold w-[80%]">GET
+                        STRATED</button>
+
+                    <p
+                        class="flex items-center text-[12px] text-[rgb(127,109,135)] max-w-[400px] pt-[20px] m-0 border-t-[0.5px] border-solid border-[rgba(107,88,116,0.5)] ">
+                        <img class="h-[30px] mr-[20px]" src="images/Check circle.png" alt="">An AI chatbot that can
+                        understand your queries
+                    </p>
+                    <p
+                        class="flex items-center text-[12px] text-[rgb(127,109,135)] max-w-[400px] pt-[20px] m-0 border-t-[0.5px] border-solid border-[rgba(107,88,116,0.5)] ">
+                        <img class="h-[30px] mr-[20px]" src="images/Check circle.png" alt="">An AI chatbot that can
+                        understand your queries
+                    </p>
+                    <p
+                        class="flex items-center text-[12px] text-[rgb(127,109,135)] max-w-[400px] pt-[20px] m-0 border-t-[0.5px] border-solid border-[rgba(107,88,116,0.5)] ">
+                        <img class="h-[30px] mr-[20px]" src="images/Check circle.png" alt="">An AI chatbot that can
+                        understand your queries
+                    </p>
+                </div>
+
+                <div data-aos="flip-left"
+                    class="price-box flex flex-col items-start justify-between w-[30%] h-[550px] rounded-2xl mt-[10px]  border-[0.5px] border-solid border-[rgba(107,88,116,0.5)] p-3">
+                    <h1 class="text-[#7e00d2] text-[30px] mt-[10px] mb-[20px]">Premium</h1>
+                    <h2>Advanced AI Chatbot, priority support, analytics dashboard.</h2>
+                    <h3 class="text-[40px] mt-[10px] mb-[30px]">$9.99</h3>
+                    <button style="clip-path: polygon(94% 0, 100% 23%, 100% 99%, 0 100%, 0 0);
+                    "
+                        class="border-0 bg-gray-400 text-black rounded-md h-[35px] cursor-pointer text-[14px] p-1 font-bold w-[80%]">GET
+                        STRATED</button>
+
+                    <p
+                        class="flex items-center text-[12px] text-[rgb(127,109,135)] max-w-[400px] pt-[20px] m-0 border-t-[0.5px] border-solid border-[rgba(107,88,116,0.5)] ">
+                        <img class="h-[30px] mr-[20px]" src="images/Check circle.png" alt="">An AI chatbot that can
+                        understand your queries
+                    </p>
+                    <p
+                        class="flex items-center text-[12px] text-[rgb(127,109,135)] max-w-[400px] pt-[20px] m-0 border-t-[0.5px] border-solid border-[rgba(107,88,116,0.5)] ">
+                        <img class="h-[30px] mr-[20px]" src="images/Check circle.png" alt="">An AI chatbot that can
+                        understand your queries
+                    </p>
+                    <p
+                        class="flex items-center text-[12px] text-[rgb(127,109,135)] max-w-[400px] pt-[20px] m-0 border-t-[0.5px] border-solid border-[rgba(107,88,116,0.5)] ">
+                        <img class="h-[30px] mr-[20px]" src="images/Check circle.png" alt="">An AI chatbot that can
+                        understand your queries
+                    </p>
+                </div>
+
+                <div data-aos="flip-left"
+                    class="price-box flex flex-col items-start justify-between w-[30%] h-[500px] rounded-2xl mt-[30px]  border-[0.5px] border-solid border-[rgba(107,88,116,0.5)] p-3">
+                    <h1 class="text-[#ff776f] text-[30px] mb-[20px]">Enterprise</h1>
+                    <h2>Custom AI Chatbot,advanced analytics, dedicated account</h2>
+                    <h3 class="text-[40px] mt-[10px] mb-[30px]">$99.99</h3>
+                    <button style="clip-path: polygon(94% 0, 100% 23%, 100% 99%, 0 100%, 0 0);
+                    "
+                        class="border-0 bg-gray-400 text-black rounded-md h-[35px] cursor-pointer text-[14px] p-1 font-bold w-[80%]">GET
+                        STRATED</button>
+
+                    <p
+                        class="flex items-center text-[12px] text-[rgb(127,109,135)] max-w-[400px] pt-[20px] m-0 border-t-[0.5px]  border-[rgba(107,88,116,0.5)] ">
+                        <img class="h-[30px] mr-[20px]" src="images/Check circle.png" alt="">An AI chatbot that can
+                        understand your queries
+                    </p>
+                    <p
+                        class="flex items-center text-[12px] text-[rgb(127,109,135)] max-w-[400px] pt-[20px] m-0 border-t-[0.5px] border-solid border-[rgba(107,88,116,0.5)] ">
+                        <img class="h-[30px] mr-[20px]" src="images/Check circle.png" alt="">An AI chatbot that can
+                        understand your queries
+                    </p>
+                    <p
+                        class="flex items-center text-[12px] text-[rgb(127,109,135)] max-w-[400px] pt-[20px] m-0 border-t-[0.5px] border-solid border-[rgba(107,88,116,0.5)] ">
+                        <img class="h-[30px] mr-[20px]" src="images/Check circle.png" alt="">An AI chatbot that can
+                        understand your queries
+                    </p>
+                </div>
+            </div>
+            <a href="#" class="text-white text-[15px] mt-[40px]">SEE THE FULL DETAILS</a>
+
+        </section>
+
+        <section
+            class="roadmap relative flex flex-col items-center w-[95%] justify-center border-t-0 border-[0.5px] border-solid border-[rgb(107,88,116,0.5)]  text-white pb-[30px]">
+            <h1 data-aos="zoom-in" class="text-[40px] mt-[100px] text-center">What we're working on</h1>
+
+            <div class="cards flex w-[100%] items-center justify-center flex-wrap max-w-[1200px] gap-7 ">
+                <div
+                    class="card autoBlur border-[0.5px] border-solid border-[rgba(107,88,116,0.5)] h-[600px] rounded-2xl overflow-hidden relative w-[45%]">
+                    <img src="images/roadmap-1.png" class="absolute top-0 left-0 w-full right-0 h-[400px] mx-auto">
+                    <h2 class="absolute bottom-[20%] left-[8%] text-[30px]">Voice Recognition</h2>
+                    <p class="absolute bottom-[5%] left-[8%] max-w-[80%] text-[15px] text-[rgb(127,109,135)] ">Enable
+                        the chatbot to understand and respond to voice commands, making it easier for users to interact
+                        with the app hands-free.</p>
+                </div>
+                <div
+                    class="card autoBlur border-[0.5px] border-solid border-[rgba(107,88,116,0.5)] h-[600px] rounded-2xl overflow-hidden relative w-[45%] mt-[10%]">
+                    <img src="images/roadmap-2.png" class="absolute top-0 left-0 w-full right-0 h-[400px] mx-auto">
+                    <h2 class="absolute bottom-[20%] left-[8%] text-[30px]">Voice Recognition</h2>
+                    <p class="absolute bottom-[5%] left-[8%] max-w-[80%] text-[15px] text-[rgb(127,109,135)] ">Enable
+                        the chatbot to understand and respond to voice commands, making it easier for users to interact
+                        with the app hands-free.</p>
+                </div>
+                <div
+                    class="card autoBlur border-[0.5px] border-solid border-[rgba(107,88,116,0.5)] h-[600px] rounded-2xl overflow-hidden relative w-[45%] mt-[-10%]">
+                    <img src="images/roadmap-3.png" class="absolute top-0 left-0 w-full right-0 h-[400px] mx-auto">
+                    <h2 class="absolute bottom-[20%] left-[8%] text-[30px]">Voice Recognition</h2>
+                    <p class="absolute bottom-[5%] left-[8%] max-w-[80%] text-[15px] text-[rgb(127,109,135)] ">Enable
+                        the chatbot to understand and respond to voice commands, making it easier for users to interact
+                        with the app hands-free.</p>
+                </div>
+                <div
+                    class="card autoBlur border-[0.5px] border-solid border-[rgba(107,88,116,0.5)] h-[600px] rounded-2xl overflow-hidden relative w-[45%]">
+                    <img src="images/roadmap-4.png" class="absolute top-0 left-0 w-full right-0 h-[400px] mx-auto">
+                    <h2 class="absolute bottom-[20%] left-[8%] text-[30px]">Voice Recognition</h2>
+                    <p class="absolute bottom-[5%] left-[8%] max-w-[80%] text-[15px] text-[rgb(127,109,135)] ">Enable
+                        the chatbot to understand and respond to voice commands, making it easier for users to interact
+                        with the app hands-free.</p>
+                </div>
+            </div>
+            <div class="btn-box relative w-24 h-10 ml-5 rounded-lg mt-[2%]">
+                <button id="signin"
+                    class="rounded-lg absolute bg-[#0E0C15] text-gray-100 cursor-pointer transition duration-200 hover:text-purple-400">OUR
+                    ROADMAP</button>
+            </div>
+            <div class="roadmap-gradient absolute top-[30%] left-0 -z-10 mix-blend-lighten"></div>
+        </section>
+
+        <footer
+            class="text-white relative flex flex-row  items-center w-[95%] justify-between border-t-0 border-[0.5px] border-solid border-[rgb(107,88,116,0.5)] h-[100px] ">
+            <h1 class="pt-4 h-3 mb-5 text-lg items-center justify-center flex ml-[3%] text-gray-400"><i
+                    class='bx bx-copyright'></i>2025 , Made with ❤️ by Sameer Swami</h1>
+            <div class="foot-icons mr-[5%] flex gap-[20px]">
+                <a href="#"
+                    class="text-gray-400 border-[0.5px] border-solid border-[rgba(107,88,116,0.5)] rounded-full text-[20px] flex items-center decoration-0 justify-center p-2 transition duration-[0.5s]"><i
+                        class="bx bxl-discord-alt"></i></a>
+                <a href="#"
+                    class="text-gray-400 border-[0.5px] border-solid border-[rgba(107,88,116,0.5)] rounded-full text-[20px] flex items-center decoration-0 justify-center p-2 transition duration-[0.5s]"><i
+                        class="bx bxl-youtube"></i></a>
+                <a href="#"
+                    class="text-gray-400 border-[0.5px] border-solid border-[rgba(107,88,116,0.5)] rounded-full text-[20px] flex items-center decoration-0 justify-center p-2 transition duration-[0.5s]"><i
+                        class="bx bxl-github"></i></a>
+                <a href="#"
+                    class="text-gray-400 border-[0.5px] border-solid border-[rgba(107,88,116,0.5)] rounded-full text-[20px] flex items-center decoration-0 justify-center p-2 transition duration-[0.5s]"><i
+                        class="bx bxl-linkedin-square"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
